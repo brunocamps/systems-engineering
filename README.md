@@ -25,3 +25,18 @@ Things you may want to cover:
 1. Follow instructions below
 https://blog.corsego.com/rails-6-install-bootstrap-with-webpacker-full
 2. Run yarn add @popperjs/core
+
+* Configure Devise for authentication:
+
+- Added gem 'devise' to gemfile
+
+- Execute on Terminal: rails generate devise:install 
+
+- Follow instructions on terminal
+
+- rails generate devise user
+
+It has now generated a new migration defining the User (migration needed), also defined Devise signatures on models/user.rb
+
+- Add before_action :authenticate_user! to application_controller.rb
+
