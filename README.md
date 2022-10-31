@@ -45,3 +45,4 @@ rails generate devise:views
 
 - Devise confirmable: not implemented yet.
 
+- Redirect user to a specific page after sign in: 

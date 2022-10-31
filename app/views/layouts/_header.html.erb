@@ -15,6 +15,12 @@
           Home
         <% end %>
       </ul>
+      <ul class="navbar-nav me-auto">
+        <%= link_to users_path, class: "nav-link #{'active fw-bold' if current_page?(users_path)}" do %>
+          <div class="fa fa-users"></div>
+          Users
+        <% end %>
+      </ul>
       <ul class="navbar-nav ms-auto">
         <% if current_user %>
           <li class="nav-item dropdown">
@@ -27,7 +33,7 @@
                 <div class="fa fa-cog"></div>
                 <b>Account settings</b>
               <% end %>
-              <%= link_to destroy_user_session_path, method: :delete, class: "dropdown-item" do %>
+              <%= link_to destroy_user_session_path, method: :get, class: "dropdown-item" do %>
                 <div class="fa fa-sign-out-alt"></div>
                 <b>Sign out</b>
               <% end %>
