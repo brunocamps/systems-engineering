@@ -40,3 +40,8 @@ It has now generated a new migration defining the User (migration needed), also 
 
 - Add before_action :authenticate_user! to application_controller.rb
 
+- Generate views with gem Devise:
+rails generate devise:views
+
+- Devise confirmable: not implemented yet.
+
